@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Regístrate en Conquer Academy y descubre nuestra formación tecnológica."
+    >
+
+    <title>Registro | Conquer Academy</title>
+</head>
+
+<body>
+
+    <header class="main-header">
+
+        <a class="logo-link" href="index.html">
+            <img
+                class="logo"
+                src="img/logo.png"
+                alt="Conquer Academy"
+            >
+        </a>
+
+        <h1>Conquer Academy</h1>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quienes-somos.html">Quiénes somos</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <main class="page-content form-page">
+
+        <section class="form-section">
+
+            <h2>Formulario de registro</h2>
+
+            <p>
+                Completa el siguiente formulario para
+                registrarte en Conquer Academy.
+            </p>
+
+            <form
+                class="auth-form"
+                action="#"
+                method="post"
+                enctype="multipart/form-data"
+            >
+
+                <fieldset>
+
+                    <legend>Datos personales</legend>
+
+                    <p>
+                        <label for="nombre">
+                            Nombre completo:
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            placeholder="Introduce tu nombre"
+                            required
+                        >
+                    </p>
+
+
+                    <p>
+                        <label for="fecha">
+                            Fecha de nacimiento:
+                        </label>
+
+                        <input
+                            type="date"
+                            id="fecha"
+                            name="fecha_nacimiento"
+                            required
+                        >
+                    </p>
+
+
+                    <p>
+                        <label for="email">
+                            Correo electrónico:
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="ejemplo@email.com"
+                            required
+                        >
+                    </p>
+
+
+                    <p>
+                        <label for="direccion">
+                            Dirección:
+                        </label>
+
+                        <input
+                            type="text"
+                            id="direccion"
+                            name="direccion"
+                            placeholder="Introduce tu dirección"
+                            required
+                        >
+                    </p>
+
+                </fieldset>
+
+
+                <fieldset>
+
+                    <legend>Información adicional</legend>
+
+                    <p>
+                        <label for="web">
+                            Página web personal:
+                        </label>
+
+                        <input
+                            type="url"
+                            id="web"
+                            name="pagina_web"
+                            placeholder="https://ejemplo.com"
+                        >
+                    </p>
+
+
+                    <p>
+                        <label for="foto">
+                            Fotografía de perfil:
+                        </label>
+
+                        <input
+                            type="file"
+                            id="foto"
+                            name="foto"
+                            accept="image/*"
+                        >
+                    </p>
+
+
+                    <p>
+                        <label for="biografia">
+                            Biografía:
+                        </label>
+
+                        <textarea
+                            id="biografia"
+                            name="biografia"
+                            rows="6"
+                            placeholder="Cuéntanos un poco sobre ti..."
+                        ></textarea>
+                    </p>
+
+                </fieldset>
+
+
+                <p>
+                    <button class="button" type="submit">
+                        Registrarse
+                    </button>
+                </p>
+
+
+                <p class="form-help">
+                    ¿Ya tienes una cuenta?
+                    <a href="login.html">
+                        Inicia sesión
+                    </a>.
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer class="main-footer">
+
+        <p>
+            &copy; 2026 Conquer Academy.
+            Todos los derechos reservados.
+        </p>
+
+        <a href="aviso-legal.html">
+            Aviso legal
+        </a>
+
+    </footer>
+
+</body>
+
+</html>

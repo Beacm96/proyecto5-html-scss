@@ -1,0 +1,241 @@
+@use "variables" as v;
+
+
+/*CONTENIDO GENERAL*/
+
+main,
+.page-content {
+    width: 100%;
+    max-width: v.$max-width;
+
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+main a {
+    color: v.$color-primary-dark;
+    font-weight: bold;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+
+/*HERO*/
+
+.hero {
+    margin-bottom: 50px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hero-text {
+
+    h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 17px;
+    }
+}
+
+.hero-image {
+
+    img {
+        width: 100%;
+        max-height: 550px;
+        object-fit: cover;
+        border-radius: v.$radius-large;
+    }
+}
+
+
+/*QUIÉNES SOMOS*/
+
+.about-preview {
+    background-color: v.$color-white;
+
+    padding: 30px;
+
+    border-radius: v.$radius-large;
+
+    margin-bottom: 50px;
+}
+
+.about-page {
+    margin-bottom: 40px;
+}
+
+.about-image {
+
+    img {
+        width: 100%;
+        border-radius: v.$radius-large;
+    }
+}
+
+
+/*CONTENIDO INTERNO*/
+
+.content-section {
+    background-color: v.$color-white;
+
+    padding: 25px;
+
+    border-radius: v.$radius-large;
+
+    margin-bottom: 30px;
+}
+
+
+/*FIGURAS*/
+
+figure {
+    margin: 20px 0;
+}
+
+figcaption {
+    margin-top: 8px;
+
+    color: v.$color-gray;
+
+    font-size: 14px;
+}
+
+
+/*PÁGINAS DE DETALLE*/
+
+.article-detail {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.article-header {
+    background-color: transparent;
+    color: v.$color-text;
+
+    padding: 0;
+
+    margin-bottom: 25px;
+
+    h2 {
+        font-size: 32px;
+    }
+}
+
+.article-date {
+    color: v.$color-gray;
+}
+
+.detail-image {
+
+    img {
+        width: 100%;
+
+        border-radius: v.$radius-large;
+    }
+}
+
+.detail-list {
+    padding-left: 25px;
+
+    li {
+        margin-bottom: 8px;
+    }
+}
+
+.back-link {
+    margin-top: 30px;
+}
+
+
+/*CONTACTO*/
+
+.contact-intro {
+    margin-bottom: 35px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+
+    margin-bottom: 40px;
+}
+
+address {
+    font-style: normal;
+}
+
+.map-container {
+    width: 100%;
+
+    iframe {
+        width: 100%;
+        height: 350px;
+
+        border: 0;
+
+        border-radius: v.$radius-medium;
+    }
+}
+
+
+/*AVISO LEGAL*/
+
+.legal-page {
+    max-width: 900px;
+}
+
+.legal-intro {
+    margin-bottom: 35px;
+}
+
+
+/*TABLET */
+
+@media (min-width: v.$tablet) {
+
+    main,
+    .page-content {
+        padding: 40px;
+    }
+
+    .hero-content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .hero-text,
+    .hero-image {
+        width: 50%;
+    }
+
+    .contact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/*DESKTOP*/
+
+@media (min-width: v.$desktop) {
+
+    .hero-text {
+
+        h2 {
+            font-size: 42px;
+        }
+    }
+}

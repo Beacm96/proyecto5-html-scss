@@ -1,0 +1,51 @@
+@use "variables" as v;
+
+.home-section {
+    margin-bottom: 60px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.card {
+    background-color: v.$color-white;
+    padding: 25px;
+
+    border-radius: v.$radius-large;
+
+    box-shadow: v.$shadow-light;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: v.$shadow-medium;
+    }
+
+    h3 {
+        margin-top: 0;
+    }
+
+    p {
+        color: #555;
+    }
+
+    img {
+        width: 100%;
+        border-radius: v.$radius-medium;
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-width: v.$tablet) {
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
